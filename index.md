@@ -1,3 +1,33 @@
+<style>
+  body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 40px 20px;
+  }
+  .glass-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(255, 255, 255, 0.02);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 40px 50px;
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  }
+  h1, h2, h3 { color: #ffffff; }
+  h1 { border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 10px; margin-top: 0; }
+  h2 { margin-top: 2em; color: #8b949e; font-weight: 500; }
+  a { color: #58a6ff; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  code { background: rgba(110,118,129,0.4); padding: 0.2em 0.4em; border-radius: 6px; font-family: ui-monospace, SFMono-Regular, monospace; font-size: 85%; }
+</style>
+
+<div class="glass-container">
+
 # Privacy Policy for Secure It
 
 **Last updated:** 18 September 2026
@@ -58,8 +88,7 @@ Google Drive removes the synced copy.
 "Backup Vault" and the "Emergency Kit" PDF produce files at your request and
 hand them to your device's share sheet or file picker. Where those files go
 is entirely your choice. **The Emergency Kit contains your recovery phrase
-in plain text** — treat it as you would a key to a safe. We never see these
-files.
+in plain text** — treat it as you would a key to a safe. We never see these files.
 
 ## Clipboard
 
@@ -103,3 +132,5 @@ in the "Last updated" date above.
 ## Contact
 
 Questions about this policy: **talha@otsys.co**
+
+</div>
