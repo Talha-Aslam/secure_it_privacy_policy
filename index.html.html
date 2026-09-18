@@ -1,0 +1,661 @@
+<title>Secure It Privacy Policy</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,500;0,600;0,700;1,500;1,600&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root{
+    --bg:#eef1ec;
+    --surface:#ffffff;
+    --surface-2:#f7f8f4;
+    --ink:#1b2129;
+    --ink-soft:#545c66;
+    --ink-faint:#838a92;
+    --line:#d8dcd3;
+    --accent:#7a5c17;
+    --accent-strong:#5e4712;
+    --accent-soft:#f1e6c9;
+    --verified:#2f6f5e;
+    --verified-soft:#e3efe9;
+    --warn:#8a2436;
+    --warn-soft:#f6e2e2;
+    --shadow:0 1px 2px rgba(27,33,41,.06), 0 10px 28px rgba(27,33,41,.06);
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#14171b;
+      --surface:#1b1f24;
+      --surface-2:#20242b;
+      --ink:#ece7da;
+      --ink-soft:#a3a9ac;
+      --ink-faint:#6f7579;
+      --line:#2b3038;
+      --accent:#d1a542;
+      --accent-strong:#e6bd5e;
+      --accent-soft:#332c1c;
+      --verified:#5fb39c;
+      --verified-soft:#1c2f2a;
+      --warn:#d97686;
+      --warn-soft:#3a2027;
+      --shadow:0 1px 2px rgba(0,0,0,.5), 0 14px 34px rgba(0,0,0,.38);
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#14171b;
+    --surface:#1b1f24;
+    --surface-2:#20242b;
+    --ink:#ece7da;
+    --ink-soft:#a3a9ac;
+    --ink-faint:#6f7579;
+    --line:#2b3038;
+    --accent:#d1a542;
+    --accent-strong:#e6bd5e;
+    --accent-soft:#332c1c;
+    --verified:#5fb39c;
+    --verified-soft:#1c2f2a;
+    --warn:#d97686;
+    --warn-soft:#3a2027;
+    --shadow:0 1px 2px rgba(0,0,0,.5), 0 14px 34px rgba(0,0,0,.38);
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  ::selection{ background:var(--accent-soft); color:var(--accent-strong); }
+
+  a{ color:var(--accent); text-decoration-thickness:1px; text-underline-offset:2px; }
+  a:hover{ color:var(--accent-strong); }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; border-radius:2px; }
+
+  .mono{ font-family:"IBM Plex Mono", ui-monospace, "SFMono-Regular", Menlo, monospace; }
+
+  .page{
+    max-width:1040px;
+    margin:0 auto;
+    padding:56px 20px 64px;
+  }
+
+  /* ---------- Masthead ---------- */
+  .masthead{
+    max-width:680px;
+    margin:0 auto 40px;
+    text-align:center;
+  }
+  .kicker{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.72rem;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--verified);
+    display:inline-flex;
+    align-items:center;
+    gap:8px;
+    margin-bottom:18px;
+  }
+  .kicker::before, .kicker::after{
+    content:"";
+    width:22px; height:1px;
+    background:var(--verified);
+    opacity:.55;
+  }
+  h1{
+    font-family:"Spectral", Georgia, serif;
+    font-weight:700;
+    font-size:clamp(2.2rem, 5vw, 3.1rem);
+    line-height:1.08;
+    letter-spacing:-.01em;
+    text-wrap:balance;
+    margin:0 0 18px;
+  }
+  .meta-row{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:10px;
+    margin-bottom:22px;
+  }
+  .pill{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.78rem;
+    color:var(--ink-soft);
+    background:var(--surface-2);
+    border:1px solid var(--line);
+    border-radius:100px;
+    padding:6px 14px;
+    white-space:nowrap;
+  }
+  .thesis{
+    font-size:1.08rem;
+    line-height:1.65;
+    color:var(--ink-soft);
+    margin:0;
+  }
+  .thesis strong{ color:var(--ink); font-weight:600; }
+
+  /* ---------- Guarantee seals ---------- */
+  .guarantees{
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    gap:14px;
+    max-width:920px;
+    margin:0 auto 52px;
+  }
+  .seal{
+    background:var(--surface);
+    border:1px solid var(--line);
+    border-radius:10px;
+    padding:18px 14px;
+    text-align:center;
+    box-shadow:var(--shadow);
+    position:relative;
+  }
+  .seal:nth-child(1){ transform:rotate(-.6deg); }
+  .seal:nth-child(2){ transform:rotate(.4deg); }
+  .seal:nth-child(3){ transform:rotate(-.3deg); }
+  .seal:nth-child(4){ transform:rotate(.6deg); }
+  .seal::before{
+    content:"";
+    position:absolute; inset:5px;
+    border:1px dashed var(--accent-soft);
+    border-radius:6px;
+    pointer-events:none;
+  }
+  .seal-num{
+    display:block;
+    font-family:"Spectral", serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:1.5rem;
+    color:var(--accent);
+    line-height:1.2;
+    font-variant-numeric:tabular-nums;
+  }
+  .seal-label{
+    display:block;
+    font-size:.74rem;
+    color:var(--ink-soft);
+    letter-spacing:.03em;
+    margin-top:4px;
+  }
+
+  /* ---------- Two column layout ---------- */
+  .layout{
+    display:grid;
+    grid-template-columns:200px minmax(0,1fr);
+    gap:52px;
+    max-width:920px;
+    margin:0 auto;
+  }
+  .toc{
+    align-self:start;
+    position:sticky;
+    top:28px;
+  }
+  .toc-label{
+    display:block;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.7rem;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    margin-bottom:12px;
+  }
+  .toc ol{
+    list-style:none;
+    margin:0; padding:0;
+    display:flex;
+    flex-direction:column;
+    gap:9px;
+    border-left:1px solid var(--line);
+  }
+  .toc a{
+    display:block;
+    padding:2px 0 2px 14px;
+    font-size:.86rem;
+    color:var(--ink-soft);
+    text-decoration:none;
+    border-left:2px solid transparent;
+    margin-left:-1px;
+  }
+  .toc a:hover{ color:var(--accent); border-left-color:var(--accent); }
+
+  .doc{ min-width:0; }
+  section{
+    padding-bottom:36px;
+    margin-bottom:36px;
+    border-bottom:1px solid var(--line);
+  }
+  section:last-child{ border-bottom:none; margin-bottom:0; }
+
+  .section-head{
+    display:flex;
+    align-items:baseline;
+    gap:14px;
+    margin-bottom:14px;
+  }
+  .section-num{
+    font-family:"Spectral", serif;
+    font-style:italic;
+    font-weight:600;
+    font-size:1.7rem;
+    color:var(--accent);
+    line-height:1;
+    flex-shrink:0;
+    font-variant-numeric:tabular-nums;
+  }
+  h2{
+    font-family:"Spectral", serif;
+    font-weight:600;
+    font-size:1.4rem;
+    text-wrap:balance;
+    margin:0;
+  }
+  .doc p{
+    max-width:64ch;
+    line-height:1.7;
+    color:var(--ink);
+    margin:0 0 14px;
+  }
+  .doc p:last-child{ margin-bottom:0; }
+  .doc ul{
+    max-width:64ch;
+    line-height:1.7;
+    padding-left:1.2em;
+    margin:0 0 14px;
+  }
+  .doc li{ margin-bottom:6px; }
+  .doc li:last-child{ margin-bottom:0; }
+  code{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.88em;
+    background:var(--surface-2);
+    border:1px solid var(--line);
+    border-radius:4px;
+    padding:.1em .4em;
+  }
+
+  /* ---------- Data table ---------- */
+  .table-wrap{ overflow-x:auto; margin-bottom:16px; }
+  table{
+    border-collapse:collapse;
+    width:100%;
+    min-width:560px;
+    font-size:.92rem;
+  }
+  th{
+    text-align:left;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.7rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    font-weight:500;
+    padding:0 12px 10px 0;
+    border-bottom:1px solid var(--line);
+  }
+  td{
+    padding:12px 12px 12px 0;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+    line-height:1.55;
+  }
+  tr:last-child td{ border-bottom:none; }
+  td.field{ font-weight:600; white-space:nowrap; }
+  td.where{ color:var(--verified); font-family:"IBM Plex Mono", monospace; font-size:.82rem; white-space:nowrap; }
+
+  /* ---------- Callouts ---------- */
+  .callout{
+    max-width:64ch;
+    background:var(--warn-soft);
+    border:1px solid color-mix(in srgb, var(--warn) 35%, transparent);
+    border-radius:10px;
+    padding:16px 18px;
+    margin:18px 0;
+    position:relative;
+  }
+  .callout-label{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.7rem;
+    letter-spacing:.1em;
+    text-transform:uppercase;
+    color:var(--warn);
+    font-weight:500;
+    display:block;
+    margin-bottom:6px;
+  }
+  .callout p{
+    color:var(--ink);
+    margin:0;
+    max-width:none;
+  }
+
+  /* ---------- Checklist grid ---------- */
+  .check-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:24px;
+    max-width:64ch;
+    margin-bottom:16px;
+  }
+  .check-col h3{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.72rem;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-faint);
+    font-weight:500;
+    margin:0 0 10px;
+  }
+  .check-col ul{ list-style:none; padding:0; margin:0; }
+  .check-col li{
+    display:flex;
+    gap:8px;
+    font-size:.92rem;
+    line-height:1.5;
+    margin-bottom:8px;
+    color:var(--ink);
+  }
+  .check-col li::before{
+    content:"—";
+    color:var(--verified);
+    flex-shrink:0;
+  }
+
+  /* ---------- Sync diagram ---------- */
+  .diagram-wrap{
+    margin:18px 0 20px;
+    max-width:64ch;
+  }
+  .diagram-wrap svg{ width:100%; height:auto; display:block; }
+  .diagram-caption{
+    font-size:.82rem;
+    color:var(--ink-soft);
+    text-align:center;
+    margin-top:8px;
+  }
+  .dg-box{ fill:var(--surface-2); stroke:var(--line); }
+  .dg-text{ fill:var(--ink); font-family:"IBM Plex Sans", sans-serif; font-size:12px; }
+  .dg-label{ fill:var(--ink-soft); font-family:"IBM Plex Mono", monospace; font-size:10px; letter-spacing:.02em; }
+  .dg-line{ stroke:var(--accent); stroke-width:1.6; }
+  .dg-lock{ fill:var(--accent); }
+
+  /* ---------- Footer ---------- */
+  .doc-footer{
+    max-width:64ch;
+    margin:44px auto 0;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .doc-footer .stamp{
+    font-family:"Spectral", serif;
+    font-style:italic;
+    color:var(--ink-faint);
+    font-size:.9rem;
+  }
+  .doc-footer a{ font-family:"IBM Plex Mono", monospace; font-size:.86rem; }
+
+  @media (max-width:880px){
+    .layout{ grid-template-columns:1fr; }
+    .toc{ position:static; margin-bottom:8px; }
+    .toc ol{
+      flex-direction:row;
+      flex-wrap:wrap;
+      border-left:none;
+      gap:8px;
+    }
+    .toc a{
+      padding:5px 10px;
+      border:1px solid var(--line);
+      border-radius:100px;
+      border-left:1px solid var(--line);
+      margin-left:0;
+      font-size:.78rem;
+    }
+    .toc a:hover{ border-color:var(--accent); }
+  }
+  @media (max-width:640px){
+    .guarantees{ grid-template-columns:1fr 1fr; }
+    .check-grid{ grid-template-columns:1fr; gap:14px; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <span class="kicker">Privacy Policy · Secure It</span>
+    <h1>Nothing to hand over, even if we wanted to.</h1>
+    <div class="meta-row">
+      <span class="pill">Last updated 18 September 2026</span>
+      <span class="pill">Android · <span class="mono">com.talha.secure_it</span></span>
+    </div>
+    <p class="thesis">Secure It is a <strong>local-first, zero-knowledge</strong> password manager. Your vault is encrypted on your device with a key derived from your master password. We operate no servers, and we never receive, store, or have any ability to read your passwords, your master password, or your recovery phrase.</p>
+  </header>
+
+  <div class="guarantees">
+    <div class="seal">
+      <span class="seal-num">0</span>
+      <span class="seal-label">servers we operate</span>
+    </div>
+    <div class="seal">
+      <span class="seal-num">AES‑256</span>
+      <span class="seal-label">vault encryption</span>
+    </div>
+    <div class="seal">
+      <span class="seal-num">Argon2id</span>
+      <span class="seal-label">key derivation</span>
+    </div>
+    <div class="seal">
+      <span class="seal-num">0</span>
+      <span class="seal-label">trackers or analytics SDKs</span>
+    </div>
+  </div>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Sections">
+      <span class="toc-label">Contents</span>
+      <ol>
+        <li><a href="#summary">01 Summary</a></li>
+        <li><a href="#on-device">02 On‑device data</a></li>
+        <li><a href="#drive-sync">03 Drive sync</a></li>
+        <li><a href="#exports">04 Exports</a></li>
+        <li><a href="#clipboard">05 Clipboard</a></li>
+        <li><a href="#sharing">06 Data sharing</a></li>
+        <li><a href="#deletion">07 Deletion</a></li>
+        <li><a href="#children">08 Children</a></li>
+        <li><a href="#zero-knowledge">09 Zero‑knowledge</a></li>
+        <li><a href="#changes">10 Changes</a></li>
+        <li><a href="#contact">11 Contact</a></li>
+      </ol>
+    </nav>
+
+    <main class="doc">
+
+      <section id="summary">
+        <div class="section-head">
+          <span class="section-num">01</span>
+          <h2>Summary</h2>
+        </div>
+        <p>Secure It is a local-first, zero-knowledge password manager. Your vault is encrypted on your device with a key derived from your master password. We operate no servers, and we never receive, store, or have any ability to read your passwords, your master password, or your recovery phrase.</p>
+      </section>
+
+      <section id="on-device">
+        <div class="section-head">
+          <span class="section-num">02</span>
+          <h2>The data Secure It stores on your device</h2>
+        </div>
+        <p>All of the following stays on your device unless you explicitly turn on Google Drive sync or export a file yourself.</p>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>What</th>
+                <th>Kept where</th>
+                <th>Detail</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="field">Vault entries</td>
+                <td class="where"><code>vault.enc</code></td>
+                <td>Service names, usernames, passwords, categories and notes, inside an encrypted vault file in the app's private storage.</td>
+              </tr>
+              <tr>
+                <td class="field">Master password</td>
+                <td class="where">Never stored</td>
+                <td>Only an Argon2id‑derived value is used to unwrap your vault's encryption key. That derivation cannot be reversed.</td>
+              </tr>
+              <tr>
+                <td class="field">Recovery phrase</td>
+                <td class="where">Never stored</td>
+                <td>Shown to you once; only its effect &mdash; a second wrapped copy of your vault key &mdash; is saved.</td>
+              </tr>
+              <tr>
+                <td class="field">App preferences</td>
+                <td class="where">On‑device</td>
+                <td>Non‑secret settings, such as your light/dark theme choice.</td>
+              </tr>
+              <tr>
+                <td class="field">Biometric unlock <span class="mono" style="font-weight:400;font-size:.85em;color:var(--ink-faint);">(optional)</span></td>
+                <td class="where">Android Keystore</td>
+                <td>Your master password is placed in the OS's own secure storage so a fingerprint check can retrieve it. It never leaves the device.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Secure It does not collect analytics, advertising identifiers, crash telemetry, location, contacts, or any device identifier.</p>
+      </section>
+
+      <section id="drive-sync">
+        <div class="section-head">
+          <span class="section-num">03</span>
+          <h2>Google Drive sync <span class="mono" style="font-size:.6em; font-weight:400; color:var(--ink-faint);">optional · off by default</span></h2>
+        </div>
+        <p>If you choose to link a Google account, Secure It requests only the <code>drive.file</code> and <code>userinfo.email</code> scopes. <code>drive.file</code> restricts the app to files it creates itself &mdash; it cannot see, read, or browse any other file in your Drive. <code>userinfo.email</code> is used solely to display which account is linked.</p>
+
+        <div class="diagram-wrap">
+          <svg viewBox="0 0 600 150" role="img" aria-label="Your device encrypts vault.enc before it reaches Google Drive; Google stores it but cannot decrypt it.">
+            <rect class="dg-box" x="20" y="35" width="150" height="80" rx="10"></rect>
+            <text class="dg-text" x="95" y="80" text-anchor="middle">Your device</text>
+            <path class="dg-lock" d="M85 55 h20 v6 h-20 z M83 61 h24 v18 h-24 z" transform="translate(0,0)"></path>
+
+            <rect class="dg-box" x="430" y="35" width="150" height="80" rx="10"></rect>
+            <text class="dg-text" x="505" y="80" text-anchor="middle">Google Drive</text>
+
+            <line class="dg-line" x1="175" y1="75" x2="425" y2="75"></line>
+            <polygon points="425,70 425,80 435,75" fill="var(--accent)"></polygon>
+            <text class="dg-label" x="300" y="55" text-anchor="middle">vault.enc</text>
+            <text class="dg-label" x="300" y="98" text-anchor="middle">AES‑256 encrypted, on your device, before upload</text>
+          </svg>
+          <p class="diagram-caption">Google stores the encrypted file. Google cannot decrypt it &mdash; and neither can we.</p>
+        </div>
+
+        <p>Your master password and recovery phrase are never uploaded. Data handled here is governed by <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google's Privacy Policy</a> while it is at rest in your Drive account.</p>
+        <p>Unlink at any time from within the app. Deleting <code>vault.enc</code> from your Google Drive removes the synced copy.</p>
+      </section>
+
+      <section id="exports">
+        <div class="section-head">
+          <span class="section-num">04</span>
+          <h2>Exports you create</h2>
+        </div>
+        <p>"Backup Vault" and the "Emergency Kit" PDF produce files at your request and hand them to your device's share sheet or file picker. Where those files go from there is entirely your choice &mdash; we never see them.</p>
+        <div class="callout">
+          <span class="callout-label">Handle with care</span>
+          <p>The Emergency Kit contains your recovery phrase in plain text. Treat it as you would a key to a safe.</p>
+        </div>
+      </section>
+
+      <section id="clipboard">
+        <div class="section-head">
+          <span class="section-num">05</span>
+          <h2>Clipboard</h2>
+        </div>
+        <p>Passwords you copy are placed on the system clipboard, flagged sensitive so Android does not display them in its clipboard preview, and automatically cleared after <strong>45 seconds</strong> if you have not copied something else since.</p>
+      </section>
+
+      <section id="sharing">
+        <div class="section-head">
+          <span class="section-num">06</span>
+          <h2>Data sharing</h2>
+        </div>
+        <p>Secure It contains no advertising SDKs, no analytics SDKs, and no third-party trackers. No data is sold or shared with anyone.</p>
+        <div class="check-grid">
+          <div class="check-col">
+            <h3>Never present</h3>
+            <ul>
+              <li>Advertising SDKs</li>
+              <li>Analytics SDKs</li>
+              <li>Third‑party trackers</li>
+              <li>Data sales of any kind</li>
+            </ul>
+          </div>
+          <div class="check-col">
+            <h3>Only network destination</h3>
+            <ul>
+              <li>Google's own APIs</li>
+              <li>Only when you've linked Drive sync</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="deletion">
+        <div class="section-head">
+          <span class="section-num">07</span>
+          <h2>Data deletion</h2>
+        </div>
+        <p>Uninstalling Secure It removes the vault and all app data from your device. To remove synced data, delete <code>vault.enc</code> from your Google Drive and revoke the app's access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
+        <p>Because we hold no data about you, there is no account to delete and no server-side deletion request to make.</p>
+      </section>
+
+      <section id="children">
+        <div class="section-head">
+          <span class="section-num">08</span>
+          <h2>Children</h2>
+        </div>
+        <p>Secure It is not directed at children under 13 and collects no data from anyone.</p>
+      </section>
+
+      <section id="zero-knowledge">
+        <div class="section-head">
+          <span class="section-num">09</span>
+          <h2>What zero‑knowledge means for you</h2>
+        </div>
+        <p>Because we never hold your master password or recovery phrase, we cannot recover your vault if you lose both. This is the deliberate trade-off that makes the design safe.</p>
+        <div class="callout">
+          <span class="callout-label">No recovery without your key</span>
+          <p>If you lose your master password <em>and</em> your recovery phrase, your vault is unrecoverable &mdash; by you or by us. Keep your Emergency Kit somewhere secure.</p>
+        </div>
+      </section>
+
+      <section id="changes">
+        <div class="section-head">
+          <span class="section-num">10</span>
+          <h2>Changes</h2>
+        </div>
+        <p>Material changes to this policy will be published at this URL and reflected in the "Last updated" date above.</p>
+      </section>
+
+      <section id="contact">
+        <div class="section-head">
+          <span class="section-num">11</span>
+          <h2>Contact</h2>
+        </div>
+        <p>Questions about this policy: <a href="mailto:talha@otsys.co">talha@otsys.co</a></p>
+      </section>
+
+      <div class="doc-footer">
+        <span class="stamp">— filed and sealed, Secure It</span>
+        <a href="mailto:talha@otsys.co">talha@otsys.co</a>
+      </div>
+
+    </main>
+  </div>
+
+</div>
