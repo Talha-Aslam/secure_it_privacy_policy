@@ -431,7 +431,7 @@
     <span class="kicker">Privacy Policy · Secure It</span>
     <h1>Nothing to hand over, even if we wanted to.</h1>
     <div class="meta-row">
-      <span class="pill">Last updated 18 September 2026</span>
+      <span class="pill">Last updated 1 October 2026</span>
       <span class="pill">Android · <span class="mono">com.talha.secure_it</span></span>
     </div>
     <p class="thesis">Secure It is a <strong>local-first, zero-knowledge</strong> password manager. Your vault is encrypted on your device with a key derived from your master password. We operate no servers, and we never receive, store, or have any ability to read your passwords, your master password, or your recovery phrase.</p>
@@ -465,12 +465,13 @@
         <li><a href="#drive-sync">03 Drive sync</a></li>
         <li><a href="#exports">04 Exports</a></li>
         <li><a href="#clipboard">05 Clipboard</a></li>
-        <li><a href="#sharing">06 Data sharing</a></li>
-        <li><a href="#deletion">07 Deletion</a></li>
-        <li><a href="#children">08 Children</a></li>
-        <li><a href="#zero-knowledge">09 Zero‑knowledge</a></li>
-        <li><a href="#changes">10 Changes</a></li>
-        <li><a href="#contact">11 Contact</a></li>
+        <li><a href="#credential-sharing">06 Sharing a credential</a></li>
+        <li><a href="#sharing">07 Data sharing</a></li>
+        <li><a href="#deletion">08 Deletion</a></li>
+        <li><a href="#children">09 Children</a></li>
+        <li><a href="#zero-knowledge">10 Zero‑knowledge</a></li>
+        <li><a href="#changes">11 Changes</a></li>
+        <li><a href="#contact">12 Contact</a></li>
       </ol>
     </nav>
 
@@ -579,9 +580,23 @@
         <p>Passwords you copy are placed on the system clipboard, flagged sensitive so Android does not display them in its clipboard preview, and automatically cleared after <strong>45 seconds</strong> if you have not copied something else since.</p>
       </section>
 
-      <section id="sharing">
+      <section id="credential-sharing">
         <div class="section-head">
           <span class="section-num">06</span>
+          <h2>Sharing a credential <span class="mono" style="font-size:.6em; font-weight:400; color:var(--ink-faint);">optional · off by default</span></h2>
+        </div>
+        <p>If you use "Share Entry," the credential is encrypted on your device with a one-time random key before it ever leaves it. The encrypted copy is stored in <strong>your own Google Drive</strong>, under a randomly‑generated file name &mdash; not ours, and not any third party's.</p>
+        <p>The key that unlocks it travels only inside the share link itself, in the part after the <code>#</code> symbol. Browsers and web servers never transmit that part anywhere &mdash; which means Google cannot decrypt the file, and neither can we. We never see the credential, the link, or who it was shared with.</p>
+        <p>If you set a passphrase, both the link <em>and</em> the passphrase are required to open the share. Send them through two different apps &mdash; sending both the same way protects against nothing.</p>
+        <div class="callout">
+          <span class="callout-label">A share is a copy, not a loan</span>
+          <p>Because no server enforces anything here, nothing can stop a link from being opened more than once while its file still exists. Treat a share link as a temporary copy of the password, and change the password afterward if it matters. You can revoke any share instantly from "Shares" on the dashboard, which deletes the file and kills the link for everyone, immediately.</p>
+        </div>
+      </section>
+
+      <section id="sharing">
+        <div class="section-head">
+          <span class="section-num">07</span>
           <h2>Data sharing</h2>
         </div>
         <p>Secure It contains no advertising SDKs, no analytics SDKs, and no third-party trackers. No data is sold or shared with anyone.</p>
@@ -607,7 +622,7 @@
 
       <section id="deletion">
         <div class="section-head">
-          <span class="section-num">07</span>
+          <span class="section-num">08</span>
           <h2>Data deletion</h2>
         </div>
         <p>Uninstalling Secure It removes the vault and all app data from your device. To remove synced data, delete <code>vault.enc</code> from your Google Drive and revoke the app's access at <a href="https://myaccount.google.com/permissions" target="_blank" rel="noopener">myaccount.google.com/permissions</a>.</p>
@@ -616,7 +631,7 @@
 
       <section id="children">
         <div class="section-head">
-          <span class="section-num">08</span>
+          <span class="section-num">09</span>
           <h2>Children</h2>
         </div>
         <p>Secure It is not directed at children under 13 and collects no data from anyone.</p>
@@ -624,7 +639,7 @@
 
       <section id="zero-knowledge">
         <div class="section-head">
-          <span class="section-num">09</span>
+          <span class="section-num">10</span>
           <h2>What zero‑knowledge means for you</h2>
         </div>
         <p>Because we never hold your master password or recovery phrase, we cannot recover your vault if you lose both. This is the deliberate trade-off that makes the design safe.</p>
@@ -636,7 +651,7 @@
 
       <section id="changes">
         <div class="section-head">
-          <span class="section-num">10</span>
+          <span class="section-num">11</span>
           <h2>Changes</h2>
         </div>
         <p>Material changes to this policy will be published at this URL and reflected in the "Last updated" date above.</p>
@@ -644,7 +659,7 @@
 
       <section id="contact">
         <div class="section-head">
-          <span class="section-num">11</span>
+          <span class="section-num">12</span>
           <h2>Contact</h2>
         </div>
         <p>Questions about this policy: <a href="mailto:talhaaslamdev@gmail.com">talhaaslamdev@gmail.com</a></p>
